@@ -3,16 +3,16 @@ package com.github.wagnerjt.kafka.com.github.wagnerjt.kafka.models;
 /**
  * Identifies some unique User
  */
-public class User {
+public class Author {
     private String id;
     private String firstName;
     private String lastName;
 
-    public User(String id) {
+    public Author(String id) {
         this.id = id;
     }
 
-    public User(String id, String firstName, String lastName) {
+    public Author(String id, String firstName, String lastName) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;

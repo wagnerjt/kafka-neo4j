@@ -7,11 +7,13 @@ public class Post {
     private String id;
     private String name;
     private String description;
+    private String authorId;
 
-    public Post(String id, String name, String description) {
+    public Post(String id, String name, String description, String authorId) {
         this.id = id;
         this.name = name;
         this.description = description;
+        this.authorId = authorId;
     }
 
     public String getId() {
@@ -36,5 +38,13 @@ public class Post {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getAuthorId() {
+        return authorId;
+    }
+
+    public void setAuthorId(String authorId) {
+        this.authorId = authorId;
     }
 }
