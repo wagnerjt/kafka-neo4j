@@ -1,0 +1,51 @@
+{
+  "authors": [
+    {
+      "id": "A",
+      "firstName": "fnameA",
+      "lastName": "lnameA"
+    },
+    {
+      "id": "B",
+      "firstName": "fnameB",
+      "lastName": "lnameB"
+    },
+    {
+      "id": "C",
+      "firstName": "fnameC",
+      "lastName": "lnameC"
+    }
+  ],
+  "posts": [
+    {
+      "id": "postA_one",
+      "name": "Some name actually pt.1",
+      "description": "Lorem epsom doda",
+      "authorId": "A"
+    },
+    {
+      "id": "postA_two",
+      "name": "Some name actually pt.2",
+      "description": "Lorem epsom doda",
+      "authorId": "A"
+    },
+    {
+      "id": "postA_three",
+      "name": "Some name actually pt.3",
+      "description": "Lorem epsom doda",
+      "authorId": "A"
+    },
+    {
+      "id": "postA_four",
+      "name": "Some name actually pt.4",
+      "description": "Lorem epsom doda",
+      "authorId": "A"
+    },
+    {
+      "id": "postB_one",
+      "name": "Some post from author B",
+      "description": "Lorem epsom doda",
+      "authorId": "B"
+    }
+  ]
+}

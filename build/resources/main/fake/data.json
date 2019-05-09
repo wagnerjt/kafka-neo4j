@@ -21,7 +21,7 @@
       "id": "postA_one",
       "name": "Some name actually pt.1",
       "description": "Lorem epsom doda",
-      "authorId": "A",
+      "authorId": "A"
     },
     {
       "id": "postA_two",
@@ -33,7 +33,7 @@
       "id": "postA_three",
       "name": "Some name actually pt.3",
       "description": "Lorem epsom doda",
-      "authorId": "A",
+      "authorId": "A"
     },
     {
       "id": "postA_four",
@@ -45,7 +45,7 @@
       "id": "postB_one",
       "name": "Some post from author B",
       "description": "Lorem epsom doda",
-      "authorId": "B",
+      "authorId": "B"
     }
   ]
 }

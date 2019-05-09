@@ -1,24 +1,45 @@
-# Spawn ZooKeeper : 2181
-zookeeper-server-start.bat config/zookeeper.properties
+# Simple Proof of Concept to show Apache Kafka and Neo4j
 
-# Spawn Kafka : 9092
-kafka-server-start.bat config/server.properties
+## Requirements
 
+* Java 8
+* Gradle
+* Access to Maven packages in the build.gradle
+* Apache Kafka, Apache ZooKeeper, and Neo4j running (Dockerfile coming soon)
 
+### Fake Producing data into Kafka
 
-# Topics
-kafka-topics.bat --zookeeper 127.0.0.1:2181 --list
-kafka-topics.bat --zookeeper 127.0.0.1:2181 --topic second_topic --describe
+* Fake authors and posts data is provided in the `resources/fake/data.json`
+* `Producer.java` produces the fake data on a particular topics, and key 
 
-kafka-topics.bat --zookeeper 127.0.0.1:2181 --topic second_topic --create --partitions 6 --replication-factor 1
+### Getting Started
 
+* Check out `Main.java`
 
-# Producers
-kafka-console-producer.bat --broker-list 127.0.0.1:9092 --topic first_topic --producer-property acks=all
+### Consumers
 
+Coming Soon
 
-# Consumption from Shell
-kafka-console-consumer.bat --bootstrap-server 127.0.0.1:9092 --topic first_topic --from-beginning
+# Helpful CLI Commands below
 
-## Groups of Consumers
-kafka-console-consumer.bat --bootstrap-server 127.0.0.1:9092 --topic first_topic --group my-first-application
+Spawn ZooKeeper, default configuration, on port 2181
+
+`zookeeper-server-start config/zookeeper.properties`
+
+Spawn Kafka, defaulting configuration, on port 9092
+
+`kafka-server-start config/server.properties`
+
+## Create Topics we need (running locally for 1 replication factor)
+
+Create the Author Topic.
+
+`kafka-topics --zookeeper 127.0.0.1:2181 --topic {AUTHOR_TOPIC} --create --partitions 6 --replication-factor 1`
+
+Create the Post Topic.
+
+`kafka-topics --zookeeper 127.0.0.1:2181 --topic {POST_TOPIC} --create --partitions 6 --replication-factor 1`
+
+* {AUTHOR_TOPIC} - default is `author_topic`
+    * The default key that will be published to is in the form `id_{AUTHOR_ID}` 
+* {POST_TOPIC} - default is  `post_topic`

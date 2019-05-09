@@ -12,12 +12,15 @@
     <orderEntry type="module" module-name="kafka-beginner_main" />
     <orderEntry type="library" name="Gradle: org.apache.kafka:kafka-clients:2.2.0" level="project" />
     <orderEntry type="library" name="Gradle: org.neo4j.driver:neo4j-java-driver:1.7.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.9.8" level="project" />
     <orderEntry type="library" name="Gradle: org.slf4j:slf4j-simple:1.7.26" level="project" />
     <orderEntry type="library" name="Gradle: junit:junit:4.12" level="project" />
     <orderEntry type="library" name="Gradle: com.github.luben:zstd-jni:1.3.8-1" level="project" />
     <orderEntry type="library" name="Gradle: org.lz4:lz4-java:1.5.0" level="project" />
     <orderEntry type="library" name="Gradle: org.xerial.snappy:snappy-java:1.1.7.2" level="project" />
     <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.26" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.9.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.9.8" level="project" />
     <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
   </component>
   <component name="TestModuleProperties" production-module="kafka-beginner_main" />

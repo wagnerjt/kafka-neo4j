@@ -9,12 +9,13 @@ public class Post {
     private String description;
     private String authorId;
 
-    public Post(String id, String name, String description, String authorId) {
-        this.id = id;
-        this.name = name;
-        this.description = description;
-        this.authorId = authorId;
-    }
+
+//    public Post(String id, String name, String description, String authorId) {
+//        this.id = id;
+//        this.name = name;
+//        this.description = description;
+//        this.authorId = authorId;
+//    }
 
     public String getId() {
         return id;
