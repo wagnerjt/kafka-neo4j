@@ -6,14 +6,12 @@ import com.github.wagnerjt.kafka.com.github.wagnerjt.kafka.models.Author;
 import com.github.wagnerjt.kafka.com.github.wagnerjt.kafka.models.Data;
 import com.github.wagnerjt.kafka.com.github.wagnerjt.kafka.models.Post;
 import org.apache.kafka.clients.producer.*;
-import org.apache.kafka.common.serialization.StringSerializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.Properties;
 
 public class Producer {
-    private static final String KAFKA_ADDRESS = "127.0.0.1:9092";
     private static final String TOPIC_KEY_AUTHOR = "id_";
     private static final String TOPIC_TARGET_AUTHOR = "author_topic";
 
@@ -114,17 +112,5 @@ public class Producer {
 
     public static Producer create(Data data, Properties kafkaConfig) {
         return new Producer(data, kafkaConfig);
-    }
-
-    public static void main(String[] args) {
-        // create Producer properties
-        Properties properties = new Properties();
-        properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, KAFKA_ADDRESS);
-        properties.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
-        properties.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
-
-
-
-
     }
 }

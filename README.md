@@ -14,11 +14,19 @@
 
 ### Getting Started
 
-* Check out `Main.java`
+* Check out `Main.java` and the Helpful CLI Commands section below.
 
 ### Consumers
 
-Coming Soon
+* Coming Soon!
+* Test a Consumer via CLI: 
+```text
+kafka-console-consumer --bootstrap-server 127.0.0.1:9092 --topic author_topic --group group_cli --from-beginning
+
+{"id":"A","firstName":"fnameA","lastName":"lnameA"}
+{"id":"B","firstName":"fnameB","lastName":"lnameB"}
+{"id":"C","firstName":"fnameC","lastName":"lnameC"}
+```
 
 # Helpful CLI Commands below
 
